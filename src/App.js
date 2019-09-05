@@ -36,7 +36,7 @@ class App extends React.Component {
   addTodo = (event, todoName) => {
     event.preventDefault();
     const existing = this.state.todos.filter(
-      todo => todo.name === todoName
+      todo => todo.task === todoName
     );
     if (existing.length === 0) {
       const newTodo = {
