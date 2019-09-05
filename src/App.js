@@ -29,7 +29,8 @@ class App extends React.Component {
   constructor() {
     super();
     this.state = {
-      todos
+      todos,
+      newTodo: ""
     };
   }
   
@@ -81,6 +82,7 @@ class App extends React.Component {
         </div>
         <TodoList
           todos={this.state.todos}
+          newTodo
           toggleTodo={this.toggleTodo}
           clearCompleted={this.clearCompleted}
         />
